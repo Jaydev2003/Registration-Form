@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Pages</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        padding: 100px;
+        box-sizing: border-box;
+      }
+
+      
+    </style>
+    <!-- <link rel="stylesheet" href="page.html"> -->
+  </head>
+  <body>
+    <h1 style="text-align: center">Welcome to login pages</h1>
+    <hr />
+
+    <div class="box">
+      Username <br />
+      <input type="text" id="username" />
+      <br><br>
+
+      Password <br />
+      <input type="text" id="password" />
+      <br><br>
+
+      <button onclick="login()">Submit</button>
+
+      <!-- <div class="box1">
+            Username <br>
+            <input type="text">
+        </div>
+      
+        <div class="box2">
+            Password <br>
+            <input type="text">
+        </div>
+
+        <div class="box3">
+            <button>Submit</button>
+        </div> -->
+    </div>
+    <script type="text/javascript">
+      function login() {
+        var usname = document.getElementById("username").value;
+        var pword = document.getElementById("password").value;
+
+        if (usname == "world" && pword == "123") {
+          location.assign("http://127.0.0.1:5500/page.html");
+        } else {
+          window.alert("type a correct username and password");
+        }
+      }
+    </script>
+  </body>
+</html>
